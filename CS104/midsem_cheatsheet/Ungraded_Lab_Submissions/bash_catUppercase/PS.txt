@@ -1,0 +1,6 @@
+        Write a Bash Program which, given the path of a file, prints out the contents of the file to the terminal after converting each lowercase character to uppercase.
+
+Usage :- “bash submission.sh <file path>”
+
+Example:- If a.txt contained the text – “Hello World 123 %&”, then on executing the command bash submission.sh a.txt, the output to the terminal would be – “HELLO WORLD 123 %&”
+      

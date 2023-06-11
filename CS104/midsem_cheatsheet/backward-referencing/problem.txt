@@ -1,0 +1,23 @@
+Problem statement:
+
+You are given a "sample.csv" file and you need to modify the file as specified below.
+
+
+Eg :
+Input ->
+Week_end,Indicator,High_industry,Value
+2019-05-05,Number of paid jobs - 34 days,Film,2090110
+2019-05-05,Number of paid jobs - 34 days,Agriculture,95150
+2019-05-05,Number of paid jobs - 34 days,Banking,405050
+2019-05-05,Number of paid jobs - 34 days,Manufacturing,1570740
+....
+Output ->
+"Film":2090110
+"Agriculture":95150
+"Banking":405050
+"Manufacturing":1570740
+
+
+Solution: sed -r -e '1d' -e 's/(.*),(.*),(.*),(.*)/"\3":\4/g' sample.csv
+
+(Note that \3 and \4 are backward references to the respective fields)

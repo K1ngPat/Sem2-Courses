@@ -1,0 +1,88 @@
+<!-- Hobbies -->
+<html>
+<head>
+    <title>Hobbies</title>
+    <style>
+        .topnav {border: 5px double rgb(104, 65, 2);
+      background-color: rgb(184, 61, 0);
+      text-align: center;}
+    </style>
+
+</head>
+
+<body style="font-size: x-large;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;color: rgb(255, 255, 255); background-color: rgb(168, 84, 6);">
+
+    <div class="topnav" style="text-align:center;">
+         <a href="index.html" style="color: rgb(214, 218, 0);">Home</a>
+         <a href="projects.html" style="color: rgb(214, 218, 0);">Projects</a>
+         <a href="education.html" style="color: rgb(214, 218, 0);">Education</a>
+         <a href="hobbies.html" style="color: rgb(214, 218, 0);">Hobbies</a>
+         <a href="contact.html" style="color: rgb(214, 218, 0);">Contact</a>
+     </div>
+ 
+     <div id="hobbies" class="hobbies">
+
+        <div id="checks">
+            <label for="check1">Basketball </label> 
+            <input type="checkbox" id="check1" >
+            <p id="text1" style="display: none;">I've been a passionate basketball player since middle school. I was the vice-captain of my High School basketball team, played a major role on the winning team of the Fresher's GC 2023 at IIT Bombay, and am currently a member of the IIT Bombay team for Aavhan 2023. </p>
+        </div>
+        
+        <div id="checks">
+            <label for="check2">Debating </label> 
+            <input type="checkbox" id="check2">
+            <p id="text2" style="display: none;">I have represented VIBGOR High at the Frank Anthony Memorial Debate 2019. After coming to college, I broke to the finals of the Freshers' Debate Open. While representing IIT Bombay, broke to the finals of the COEP Open Parliamentary Debate, 2023.</p>
+        </div>
+
+        <div id="checks">
+            <label for="check3">General Knowledge </label> 
+            <input type="checkbox" id="check3">
+            <p id="text3" style="display: none;"> A very informal hobby, but I've always loved random facts! I often play a game with my friends, where you name any topic and I'll (probably) give you a fact about it that you didn't know :)</p>
+        </div>
+
+        <input type="button" id="myCheck" value="Learn More" onclick="showHobbies()">
+
+
+
+     </div>
+
+
+     <script>
+        function showHobbies()
+        {
+
+            var c1 = document.getElementById("check1");
+            var c2 = document.getElementById("check2");
+            var c3 = document.getElementById("check3");
+            var t1 = document.getElementById("text1");
+            var t2 = document.getElementById("text2");
+            var t3 = document.getElementById("text3");
+
+            if (c1.checked == true){
+            t1.style.display = "block";
+            } else {
+            t1.style.display = "none";
+            }
+
+            if (c2.checked == true){
+            t2.style.display = "block";
+            } else {
+            t2.style.display = "none";
+            }
+
+            if (c3.checked == true){
+            t3.style.display = "block";
+            } else {
+            t3.style.display = "none";
+            }
+
+
+
+            
+        }
+
+     </script>
+     
+ </body>
+
+</html>
